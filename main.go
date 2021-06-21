@@ -1,7 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
+var (
+	password = os.Getenv("password")
+)
 func Cat() string {
 	return "miao~~~"
 }
