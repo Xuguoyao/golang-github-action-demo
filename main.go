@@ -1,10 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
-func cat()  {
-	fmt.Println("miao~~~")
+var (
+	password = os.Getenv("password")
+)
+func Cat() string {
+	return "miao~~~"
 }
 func main()  {
-	cat()
+	saying := Cat()
+	fmt.Print(saying)
 }
